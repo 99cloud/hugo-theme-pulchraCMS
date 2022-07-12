@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header/head.html" . }}
+
+<body>
+  {{ if $.Params.useAuthLayout }}
+  <!-- {{ partial "header/authLayoutHeader.html" . }} -->
+  {{ else }}
+  {{ partial "header/navbar.html" . }}
+  {{end}}
+  <div id="content">
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ if $.Params.useAuthLayout }}
+  <!-- {{ partial "footer/authLayoutFooter.html" . }} -->
+  {{ else }}
+  {{ partial "footer/footer.html" . }}
+  {{end}}
+  {{ partialCached "footer/scripts.html" . }}
+</body>
+
+</html>

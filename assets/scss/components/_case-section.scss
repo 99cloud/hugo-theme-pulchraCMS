@@ -1,0 +1,115 @@
+.case {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+    background-color: #FAF8F6;
+
+    @include desktop {
+        padding-top: 0px;
+
+        &-header {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    &-content {
+        @include desktop {
+            flex-direction: column;
+
+            &>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &-item {
+
+        &-inner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+            background: url(../images/case/background.svg) no-repeat;
+            background-size: 100% 100%;
+            padding-bottom: 94%;
+
+            @include desktop {
+                background: transparent;
+                border: 1px solid $dark;
+                border-radius: 16px;
+                padding-bottom: 0;
+            }
+
+            & .sub-title {
+                @include desktop {
+                    font-size: 16px;
+                }
+            }
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+                padding: 24px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                @include desktop {
+                    position: relative
+                }
+
+                @include desktop-xl {
+                    padding: 20px;
+                }
+
+                & .text-content {
+                    -webkit-line-clamp: 5;
+
+                    @include desktop {
+                        margin-bottom: 30px;
+                    }
+
+                    @include desktop-lg {
+                        -webkit-line-clamp: 4;
+                    }
+
+                    @include desktop-xxl {
+                        -webkit-line-clamp: 6;
+                    }
+
+                    @include desktop-xl {
+                        line-height: 20px;
+                    }
+
+                }
+
+                & .bottom-text {
+                    position: absolute;
+                    font-size: 14px;
+                    right: 24px;
+                    bottom: 24px;
+
+                    @include desktop-xl {
+                        bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-more {
+        & .btn {
+            padding: 16px 32px;
+            background-color: $dark;
+            color: #fff;
+            font-size: 1rem;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+}

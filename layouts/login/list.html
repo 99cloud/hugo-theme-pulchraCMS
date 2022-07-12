@@ -1,0 +1,83 @@
+{{ define "main" }} {{ $address := .Site.Params.address }}
+<div class="background"></div>
+<section class="section login-page">
+  <section class="auth-layout-header">
+    <div class="header">
+      <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL }}" alt="site-logo" />
+      </a>
+    </div>
+  </section>
+  <div class="container login-wrapper">
+    <div class="form-wrapper">
+      <div class="login-form-title">
+        <div class="first-title">{{ $.Params.title }}</div>
+        <div class="second-title">{{ $.Params.secondeTitle }}</div>
+      </div>
+      <div class="login-form">
+        <div class="alert alert-success" role="alert" id="login_success"></div>
+        <div class="alert alert-danger" role="alert" id="login_alert"></div>
+        <form
+          id="login_form"
+          action=""
+          method="POST"
+        >
+          <div class="form-group login-form-item">
+            <input
+              type="email"
+              class="form-control login-form-input"
+              name="email"
+              placeholder="输入邮箱地址"
+              required
+              maxlength="30"
+              id="login_form_email"
+            />
+          </div>
+          <div class="form-group login-form-item" id="show_hide_password">
+            <input
+              type="password"
+              class="form-control login-form-input"
+              name="password"
+              placeholder="输入密码"
+              required
+              minlength="6"
+              maxlength="20"
+              id="login_form_password"
+            />
+            <div class="password-addon">
+              <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="form-group login-form-item login-form-extra">
+            <div class="form-check small custom-checkbox remember-checkbox">
+              <input
+                type="checkbox"
+                class="form-check-input custom-control-input remember-input"
+                name="remember"
+                id="login_form_remember"
+              />
+              <label class="form-check-label custom-control-label remember-label" for="login_form_remember">记住密码</label>
+            </div>
+            <div class="forget-pwd small">
+              <a href="{{ "password" | absURL }}"><i class="fa fa-question-circle" aria-hidden="true"></i>忘记密码？</a>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block login-button"
+            id="login_form_button"
+          >
+          <span class="loading-wrapper">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="login_loading"></span>
+            {{ $.Params.loginButton }}
+          </span>
+          </button>
+        </form>
+        <a href="{{ "register" | absURL }}" class="btn btn-default btn-block login-button register-button">{{ $.Params.registerButton }}</a>
+        <p id="login-form-status" class="mt-3"></p>
+      </div>
+    </div>
+  </div>
+  <p class="auth-footer"></p>
+</section>
+{{ end }}

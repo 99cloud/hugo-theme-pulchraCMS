@@ -1,0 +1,5 @@
+{{ $replace := printf "<a href=\"%s#" .Permalink }}
+{{ $content := replace .Content "<a href=\"#" $replace }}
+{{ $content = $content | replaceRE "<pre(.*?)>" "<pre$1><button data-text='复制' onclick=\"window.navigator.clipboard.writeText(nextElementSibling.innerText.replace(/\u00a0/g, ''));this.setAttribute('data-text', '已复制');style='background-color: var(--green)';setTimeout(() => {this.setAttribute('data-text', '复制');this.removeAttribute('style')}, 1000);\"></button>" }}
+
+{{ $content  | safeHTML }}

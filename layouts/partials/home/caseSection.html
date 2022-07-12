@@ -1,0 +1,54 @@
+{{ with .Site.Data.caseSection }}
+{{ if .enable }}
+<section class="section case" id="case">
+    <div class="container-fluid wrapper">
+        <div class="row justify-content-center">
+            <div class="case-header mb-5">
+                <span class="top-title">{{ .topTitle | markdownify }}</span>
+            </div>
+        </div>
+        <div class="row case-content">
+            {{$detailText := .detailText}}
+            {{ range .cases }}
+            <div class="col-4">
+                <div class="case-item">
+                    <div class="case-item-inner">
+                        <div class="content">
+                            <p class="sub-title text-ellipsis">{{.title}}</p>
+                            <div class="text-content text-ellipsis">
+                                {{ .content | markdownify }}
+                            </div>
+                            <div class="bottom-text">
+                                <a href="#" onclick="return false">
+                                    {{$detailText}}
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="vuesax/twotone/arrow-circle-right">
+                                            <g id="vuesax/twotone/arrow-circle-right_2">
+                                                <g id="arrow-circle-right">
+                                                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M7.99998 14.6663C4.31808 14.6663 1.33331 11.6816 1.33331 7.99967C1.33331 4.31778 4.31808 1.33301 7.99998 1.33301C11.6819 1.33301 14.6666 4.31778 14.6666 7.99967C14.6666 11.6816 11.6819 14.6663 7.99998 14.6663Z"
+                                                        fill="#FC5834" />
+                                                    <path id="Vector_2"
+                                                        d="M7.16016 10.3541L9.50682 8.00079L7.16016 5.64746"
+                                                        stroke="#FAF8F6" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row case-more mt-5 mb-5 justify-content-center">
+            <button class="btn">{{.buttonText}}</button>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

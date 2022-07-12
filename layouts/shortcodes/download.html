@@ -1,0 +1,9 @@
+{{ $src := .Get "src" }}
+{{ $text := .Get "text" }}
+
+<span class="download-shortcode-wrapper">
+  <a href="{{$src | absURL}}"  download >
+    {{ $text }}
+  </a>
+</spa>
+

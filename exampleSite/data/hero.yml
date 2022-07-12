@@ -1,0 +1,8 @@
+---
+enable: true
+name: OpenV2X
+topTitle: 车路协同开源平台
+content: >
+  基于 v2x 标准接口，运用 5G、AI、MEC 等技术，整合产学研各方贡献，构建源码开放、生态兼容、性能优异的基础架构和开放平台——实现智慧的路，服务智能的车，普惠行动的人。
+exploreBtnText: 探索项目
+downloadWhitePaperBtnText: 下载白皮书

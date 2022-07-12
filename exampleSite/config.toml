@@ -1,0 +1,109 @@
+baseURL = "http://localhost:1313"
+languageCode = "en-us"
+paginate = 6
+theme = "hugo-theme-pulchraCMS"
+title = "OpenV2X"
+# Main Menu
+[[menu.main]]
+name = "首页"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "项目介绍"
+url = "/project/"
+weight = 2
+[[menu.main]]
+name = "软件与文档"
+url = "/download/"
+weight = 3
+[[menu.main]]
+name = "软件下载"
+url = "/download/software/"
+weight = 1
+parent = "软件与文档"
+[[menu.main]]
+name = "文档"
+url = "https://github.com/open-v2x"
+weight = 2
+parent = "软件与文档"
+[menu.main.params]
+    external = true
+[[menu.main]]
+name = "开发者"
+url = "/developer/"
+weight = 4
+[[menu.main]]
+name = "白皮书"
+url = "/developer/whitepaper/"
+weight = 1
+parent = "开发者"
+[[menu.main]]
+name = "参与贡献"
+url = "https://github.com/open-v2x"
+weight = 2
+parent = "开发者"
+[menu.main.params]
+    external = true
+[[menu.main]]
+name = "博客资讯"
+url = "/posts/"
+weight = 5
+[[menu.main]]
+name = "技术博客"
+url = "/posts/blog/"
+weight = 1
+parent = "博客资讯"
+[[menu.main]]
+name = "新闻资讯"
+url = "/posts/news/"
+weight = 2
+parent = "博客资讯"
+[[menu.main]]
+name = "关于我们"
+url = "/about/"
+weight = 6
+
+[params]
+apiBaseUrl = "https://openv2x.org/cms"
+blogPageURL = "blog"
+contactLink = "contact"
+copyright = "©2012-2022  版权所有 | 联系我们：contact@openv2x.org"
+footerLogo = "images/contact/widget-logo.png"
+formspreeURL = "YOUR FORMSPREE URL"
+googleAnalytics = ""
+baiduAnalytics = "31b2f8a27b3f7800ec7914dab5c29e4f"
+logo = "images/site-navigation/logo.svg"
+registerLink = "/register/"
+loginLink = "/login/"
+downloadLink = "/download/"
+passwordLink = "/password/"
+postsLink = "/posts/blog/"
+newsLink = "/posts/news/"
+
+# Social icons
+[[params.social]]
+icon = "fa-facebook-official"
+url = "https://www.facebook.com/"
+weight = 1
+[[params.social]]
+icon = "fa-linkedin-square"
+url = "https://www.linkedin.com/"
+weight = 2
+[[params.social]]
+icon = "fa-pinterest-square"
+url = "https://www.pinterest.com/"
+weight = 3
+[[params.social]]
+icon = "fa-twitter-square"
+url = "https://twitter.com/"
+weight = 4
+
+[params.posts]
+menuTitle = "博客资讯"
+blogTitle = "技术博客"
+newsTitle = "新闻资讯"
+timeLabel = "发布时间："
+authorLabel = "作者："
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

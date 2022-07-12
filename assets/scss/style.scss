@@ -1,0 +1,63 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	hugo-theme-pulchraCMS HTML
+VERSION:	1.0.0
+-------------------------------------------------------------------*/
+@import "variables";
+
+@import "../bootstrap-4.5.2/scss/bootstrap";
+
+@import "typography";
+
+@import "mixins";
+
+@import "buttons";
+
+@import "common";
+
+@import "pagination";
+
+// @import "components/preloder";
+
+@import "components/navbar";
+
+@import "components/hero-section";
+
+@import "components/about-section";
+
+@import "components/function-section";
+
+@import "components/scene-section";
+
+@import "components/case-section";
+
+@import "components/target-section";
+
+@import "components/wishes-section";
+
+@import "components/dynamic-section";
+
+@import "components/footer-section";
+
+@import "components/login";
+
+@import "components/register";
+
+@import "components/download";
+
+@import "components/password";
+
+@import "components/search";
+
+@import "components/project";
+
+@import "components/developer";
+
+@import "components/posts";
+
+@import "components/news";
+
+@import "components/posts-detail";
+
+@import "components/about";

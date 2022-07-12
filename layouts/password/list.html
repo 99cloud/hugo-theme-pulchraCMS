@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="background"></div>
+<section class="section password-page">
+  <section class="auth-layout-header">
+    <div class="header">
+      <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL }}" alt="site-logo" />
+      </a>
+    </div>
+  </section>
+  <div class="container password-wrapper">
+    <div class="form-wrapper">
+      <div class="password-form-title">
+        <div class="first-title">{{ $.Params.title }}</div>
+        <div class="second-title">{{ $.Params.secondeTitle }}</div>
+      </div>
+      <div class="password-form">
+        <div class="alert alert-success" role="alert" id="password_success"></div>
+        <div class="alert alert-danger" role="alert" id="password_alert"></div>
+        <form
+          id="password_form"
+          action="{{ .Site.Params.formspreeURL }}"
+          method="POST"
+        >
+          <div class="form-group password-form-item">
+            <input
+              type="email"
+              class="form-control password-form-input"
+              name="email"
+              id="password_email"
+              placeholder="输入邮箱地址"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div class="form-group password-form-item">
+            <input
+              type="code"
+              class="form-control password-form-input"
+              name="captcha"
+              placeholder="输入验证码"
+              minlength="4"
+              maxlength="8"
+              required
+              id="password_captcha"
+            />
+            <div class="code-addon">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="code_loading"></span>
+              <a id="get_password_code">获取验证码</a>
+            </div>
+          </div>
+          <div class="form-group password-form-item" id="show_hide_password">
+            <input
+              type="password"
+              class="form-control password-form-input"
+              name="password"
+              placeholder="输入密码"
+              minlength="6"
+              maxlength="20"
+              required
+              id="password_password"
+            />
+            <div class="password-addon">
+              <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="form-group password-form-item" id="show_hide_password_confirm">
+            <input
+              type="password"
+              class="form-control password-form-input"
+              name="passwordConfirm"
+              placeholder="再次输入密码"
+              required
+              minlength="6"
+              maxlength="20"
+              id="password_password_confirm"
+            />
+            <div class="password-addon">
+              <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block password-button"
+            id="password_form_button"
+          >
+            <span class="loading-wrapper">
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="password_loading"></span>
+            {{ $.Params.submitButton }}
+            </span>
+          </button>
+        </form>
+        <a href="{{ "login" | absURL }}" class="btn btn-default btn-block password-button login-button">{{ $.Params.loginButton }}</a>
+      </div>
+    </div>
+  </div>
+  <p class="auth-footer"></p>
+</section>
+{{ end }}

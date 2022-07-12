@@ -1,0 +1,26 @@
+---
+enable: true
+bannerBackgroundImage: images/project/banner-bg.png
+bannerTitle: OpenV2X 介绍
+bannerDescription: 基于开放源码 构建 5G/6G 网络下路侧开放基础架构
+introduceTitle: OpenV2X介绍视频
+introduceescription: 欢迎了解 OpenV2X 原理以及使用场景介绍
+topTitle: OpenV2X 设计目标
+speciality:
+  - title: 标准性
+    content: >
+      5G OpenV2X 项目架构设计与功能实现参照“新四跨”协议相关标准进行，将有助于软硬件解耦，有助于多厂商互通，有助于降低 V2X 产业入门门槛，有效助力 V2X 产业发展。
+    icon: images/project/1.svg
+  - title: 先进性
+    content: >
+      采用先进的 AI 训练推理算法，基于结构化数据，对目标物进行跟踪、定位、轨迹分析、行为预测，进一步实现标准定义的碰撞预警、超车预警、变道预警等典型 V2X 应用场景。
+    icon: images/project/2.svg
+  - title: 可维护性
+    content: >
+      通过各类标准化接口，把各类路侧设备接入到边缘节点，进行统一管理、监控、运维，实现远程操作，增强可维护性。实现对多个边缘节点的基础设施、软件、设备等的统一管理、监控、运维，进一步增强了全局拓扑层面的可维护性。
+    icon: images/project/3.svg
+  - title: 开放性
+    content: >
+      采用业界主流的软硬件解耦及云原生设计理念。进一步降低入门门槛，吸引更多的厂商及开源爱好者参与，有效推动 V2X 产业降低成本与快速普及。
+    icon: images/project/4.svg
+videoUrl: http://1257411246.vod2.myqcloud.com/15def5a8vodtransgzp1257411246/6c3f95ec387702302953082921/v.f100030.mp4

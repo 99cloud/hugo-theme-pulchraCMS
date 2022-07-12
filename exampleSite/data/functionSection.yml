@@ -1,0 +1,22 @@
+---
+enable: true
+topTitle: >
+  OpenV2X 主要功能
+functions:
+  - subTitle: 保障交通安全
+    image: images/function/safety.svg
+    icon: images/function/safety-icon.svg
+    description: 典型的应用场景包括交叉路口碰撞预警等，即在交叉路口，车辆探测到与其它行驶的车辆有碰撞风险时，通过预警声音或影像提醒驾驶员避免碰撞。
+  - subTitle: 提高交通效率
+    image: images/function/efficient.svg
+    icon: images/function/efficient-icon.svg
+    description: 典型的应用场景包括车速引导等，即通过 RSU 收集交通灯、信号灯的配时信息，并将信号灯当前所处状态及剩余时间等信息广播给周围车辆。车辆收到信息后，结合当前车速、位置等信息，计算出建议行驶速度，并向车主进行提示，提高车辆不停车通过路口的可能性。
+  - subTitle: 实现自动驾驶
+    image: images/function/autopilot.svg
+    icon: images/function/autopilot-icon.svg
+    description: 典型的应用场景包括车辆编队行驶等，即头车为有人或无人驾驶车辆，后车通过V2X通信与头车保持实时信息交互，在一定的速度下实现一定车间距的多车稳定跟车，具备车道保持与跟踪、协作式自适应巡航、协作式紧急制动、协作式变道等多种功能。
+  - subTitle: 提供信息服务
+    image: images/function/information.svg
+    icon: images/function/information-icon.svg
+    description: 典型应用场景包括紧急呼叫业务等，即当车辆出现紧急情况时，车辆能自动或手动通过网络发起紧急救助，并对外提供基础的数据信息，包括车辆类型、交通事故时间地点等。
+

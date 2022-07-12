@@ -1,0 +1,12 @@
+<script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
+<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
+<script src="{{ "plugins/waypoint/jquery.waypoints.min.js" | absURL }}"></script>
+<script src="{{ "plugins/magnafic-popup/jquery.magnific-popup.min.js" | absURL }}"></script>
+<script src="{{ "plugins/tweenmax/TweenMax.min.js" | absURL }}"></script>
+<script src="{{ "plugins/imagesloaded/imagesloaded.min.js" | absURL }}"></script>
+<script src="{{ "plugins/masonry/masonry.min.js" | absURL }}"></script>
+{{ $formhandler := resources.Get "js/form-handler.js" | minify | js.Build (dict "params" .Site.Params) }}
+<script src="{{ $formhandler.Permalink }}" type="text/javascript"></script>
+{{ $loginhandler := resources.Get "js/login.js" | minify }}
+<script src="{{ $loginhandler.Permalink }}"></script>

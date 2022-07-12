@@ -1,0 +1,46 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/twotone/smart-car">
+<g id="vuesax/twotone/smart-car_2">
+<g id="smart-car">
+<g id="Group">
+<path id="Vector" d="M19.4643 21.5908C14.1943 21.5908 13.0044 24.2259 12.3527 27.4842L9.94434 38.9592H43.9443L41.536 27.4842C40.8277 24.2259 39.666 21.5908 34.396 21.5908H19.4643Z" stroke="url(#paint0_linear_449_7076)" stroke-width="4.25"/>
+<g id="Group_2">
+<path id="Vector_2" d="M43.832 62.334H39.837C37.542 62.334 37.2304 61.3423 36.8054 60.1523L36.3803 58.8774C35.7853 57.1491 35.3887 55.959 32.3287 55.959H21.4487C18.3887 55.959 17.9353 57.2908 17.397 58.8774L16.972 60.1523C16.5754 61.3706 16.2637 62.334 13.9403 62.334H9.94532C7.39532 62.334 5.38369 60.1806 5.63869 57.6873L6.82868 44.739C7.14035 41.5373 7.73533 38.9307 13.317 38.9307H40.432C46.0137 38.9307 46.6087 41.5373 46.9203 44.739L48.1387 57.6873C48.3654 60.1806 46.382 62.334 43.832 62.334Z" stroke="url(#paint1_linear_449_7076)" stroke-width="4.25"/>
+</g>
+<path id="Vector_3" d="M9.91666 32.584H7.79166" stroke="#FC5834" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_4" d="M46.0417 32.584H43.9167" stroke="#FC5834" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_5" d="M14.1667 47.459H20.5417" stroke="url(#paint2_linear_449_7076)" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_6" d="M33.2917 47.459H39.6667" stroke="url(#paint3_linear_449_7076)" stroke-width="4.25" stroke-linecap="round"/>
+</g>
+<path id="Vector_7" d="M53.0093 24.7638C53.8026 22.9221 53.5192 20.4288 52.0459 18.2472C50.6009 16.0655 48.3909 14.8472 46.3792 14.8755" stroke="url(#paint4_linear_449_7076)" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_8" d="M61.8251 27.5686C63.0151 23.2903 62.1651 18.0487 59.1334 13.5154C56.1018 8.98205 51.5684 6.20533 47.1484 5.66699" stroke="url(#paint5_linear_449_7076)" stroke-width="4.25" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_449_7076" x1="9.94434" y1="21.5908" x2="45.7154" y2="33.7479" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint1_linear_449_7076" x1="5.61685" y1="38.9307" x2="51.0203" y2="53.2585" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint2_linear_449_7076" x1="14.1667" y1="47.459" x2="20.6579" y2="49.9946" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint3_linear_449_7076" x1="33.2917" y1="47.459" x2="39.7829" y2="49.9946" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint4_linear_449_7076" x1="46.3792" y1="14.875" x2="54.5429" y2="15.8873" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint5_linear_449_7076" x1="47.1484" y1="5.66699" x2="64.7251" y2="7.78392" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

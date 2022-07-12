@@ -1,0 +1,18 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 69">
+<circle id="Ellipse 2" cx="40" cy="40" r="39.5" stroke="#FC5834"/>
+<g id="vuesax/twotone/arrow-right">
+<g id="vuesax/twotone/arrow-right_2">
+<g id="arrow-right">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M44.4401 30.099C44.0007 29.6597 43.2884 29.6597 42.8491 30.099C42.4097 30.5384 42.4097 31.2507 42.8491 31.69L50.0341 38.875H27.25C26.6286 38.875 26.125 39.3787 26.125 40C26.125 40.6213 26.6286 41.125 27.25 41.125H50.0331L42.8491 48.309C42.4097 48.7484 42.4097 49.4607 42.8491 49.9C43.2884 50.3394 44.0007 50.3394 44.4401 49.9L53.5451 40.795C53.756 40.584 53.8746 40.2979 53.8746 39.9995C53.8746 39.7012 53.756 39.415 53.5451 39.204L44.4401 30.099Z" fill="url(#paint0_linear_250_1033)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_250_1033" x1="33.2389" y1="28.9119" x2="50.5369" y2="48.5388" gradientUnits="userSpaceOnUse">
+<stop offset="0.370027" stop-color="#FC5834"/>
+<stop offset="0.99639" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,30 @@
+// Button Override
+.btn {
+  display: inline-block;
+  padding: .5rem 1.25rem;
+  font-size: .875rem;
+  border-radius: .5rem;
+  line-height: 1.15;
+}
+
+.btn-lg {
+  padding: 20px 50px;
+}
+
+.btn-light {
+  color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.btn-zoom {
+  transition: all 0.3s ease;
+  transform: scale(1);
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(230, 102, 28, 0.3);
+    transform: scale(1.03);
+  }
+}

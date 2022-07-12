@@ -1,0 +1,12 @@
+<article>
+    {{ if not .Page.IsHome }}
+        <h1 noindex>{{ .Page.Params.icon }} {{ partial "block/title.html" .Page }}</h1>
+    {{ end }}
+
+
+
+    {{ partial "block/toc.html" .Page }}
+
+    {{ partial "block/content.html" .Page }}
+
+</article>

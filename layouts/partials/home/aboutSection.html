@@ -1,0 +1,43 @@
+{{ with .Site.Data.aboutSection }}
+{{ if .enable }}
+<section class="section about_section" id="about_section">
+    <div class="container-fluid wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about_section_content">
+                    <div class="about_section_content-inner br-3">
+                        <div class="about_section_content-inner-box">
+                            <span class="top-title">{{ .topTitle }}</span>
+                            <div class="mb-4 text">
+                                {{ .content | markdownify}}
+                            </div>
+                            <div>
+                                {{ range .areas }}
+                                <span class="about_section-area px-3 py-2 mr-5 mb-3 br-2">{{.}}</span>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_section_content-thumb">
+                        <img src="{{ .thumbImage | absURL }}" alt="about_section-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_section-partner">
+            <div class="partner-l box">
+                {{ range .carouselImage }}
+                <img src="{{ . | absURL }}" alt="carousel-img">
+                {{ end }}
+            </div>
+            <div class="partner-r box">
+                {{ range .carouselImage }}
+                <img src="{{ . | absURL }}" alt="carousel-img">
+                {{ end }}
+            </div>
+        </div>
+        <img class="mask" src="images/about/about-mask.svg" alt="about_section-mask">
+    </div>
+</section>
+{{ end }}
+{{ end }}

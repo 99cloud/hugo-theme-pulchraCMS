@@ -1,0 +1,24 @@
+{{ with .Site.Data.wishesSection }}
+{{ if .enable }}
+<section class="section wishes" id="wishes">
+    <div class="container-fluid wrapper">
+        <div class="row justify-content-center">
+            <div class="case-header mb-5">
+                <span class="top-title">{{ .topTitle | markdownify }}</span>
+            </div>
+        </div>
+        <div class="row wishes-content">
+            {{ range $.Site.Data.aboutSection.remarks }}
+            <div class="wishes-content-item">
+                <div class="wishes-content-item-inner">
+                    <div class="logo"><img src="{{.logo | absURL}}"></div>
+                    <div class="content text-ellipsis">{{.content}}</div>
+                    <div class="title text-ellipsis"> {{.jobTitle}} | {{.name}}</div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

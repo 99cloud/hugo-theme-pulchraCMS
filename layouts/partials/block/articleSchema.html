@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "{{ partial "block/title.html" . }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ with .GitInfo }}{{ .AuthorName }}{{ end }}",
+        "email": "{{ with .GitInfo }}{{ .AuthorEmail }}{{ end }}",
+        "url": "https://github.com/pys1992"
+      },
+      "dateModified": "{{ partial "block/isoDatetime.html" . }}",
+      "description": "{{ partial "block/title.html" . }}",
+      "wordCount": "{{ .WordCount }}",
+      "image": {
+        "@type": "imageObject",
+        "url": "{{ .Site.Params.logo }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Params.domain }}",
+        "logo": {
+          "@type": "imageObject",
+          "url": "{{ .Site.Params.logo }}"
+        }
+      }
+    }
+</script>

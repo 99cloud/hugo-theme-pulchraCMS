@@ -1,0 +1,34 @@
+{{ with .Site.Data.sceneSection }}
+{{ if .enable }}
+<section class="section scene" id="scene">
+    <div class="container-fluid wrapper">
+        <div class="row justify-content-center">
+            <div class="scene-header mb-5">
+                <span class="top-title">{{ .topTitle | markdownify }}</span>
+            </div>
+        </div>
+        <div class="row scene-content">
+            {{ $Section := .scenes }}
+            {{ range $Section }}
+            <div class="col-6">
+                <div class="scene-item">
+                    <div class="scene-item-inner">
+                        <!-- <img class="scene-bg" src="images/scene/background.svg" alt="background"> -->
+                        <div class="img">
+                            <img src="{{.image | absURL}}" alt="scene-img">
+                        </div>
+                        <div class="content">
+                            <p class="sub-title">{{.title}}</p>
+                            <div class="text-content text-ellipsis">
+                                {{ .content | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

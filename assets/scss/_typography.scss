@@ -1,0 +1,129 @@
+.base-font {
+    font-family: $font-family-base;
+}
+
+// * {
+//     transition: all 0.3s ease;
+// }
+
+.text {
+    font-size: 14px;
+    color: $body-color;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: normal;
+}
+
+// border-radius: 8px;
+.br-1 {
+    border-radius: 4px;
+}
+
+.br-2 {
+    border-radius: 8px;
+}
+
+.br-3 {
+    border-radius: 16px;
+}
+
+a.text-light {
+    color: #fff !important;
+}
+
+a.text-light,
+a.text-dark {
+    &:hover {
+        color: $primary  !important;
+    }
+}
+
+.top-title {
+    // height: 46px;
+    line-height: 46px;
+    font-size: 32px;
+    font-weight: 600;
+    display: block;
+    color: $dark;
+    letter-spacing: 2px;
+    font-family: PingFang SC-Semibold, PingFang SC;
+    @extend .mb-3;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-family: PingFang SC-Semibold, PingFang SC;
+    letter-spacing: 2px;
+    color: $dark;
+    font-weight: 500;
+}
+
+.text-dark {
+    color: #120400 !important;
+}
+
+
+.text-content {
+    font-size: 14px;
+    font-family: PingFang SC-Light, PingFang SC;
+    letter-spacing: 2px;
+    color: $dark;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.pre-line {
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 20px;
+        top: 50%;
+        left: -20px;
+        transform: translateX(-50%);
+        background: $secondary;
+    }
+}
+
+// This fixes the fact that with `markdownify` we can't add `text-light`
+// directly onto the generated `h1`, `h2` etc.
+.text-white {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+}
+
+@each $color,
+$value in $theme-colors {
+    .text-#{$color} {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span {
+            color: $value;
+        }
+    }
+}
+
+.text-ellipsis {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /*自动换行后，多行显示，设置多少行后不在换行而是省略号显示*/
+    overflow: hidden;
+}

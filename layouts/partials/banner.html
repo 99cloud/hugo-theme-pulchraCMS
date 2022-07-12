@@ -1,0 +1,15 @@
+{{ $backImage := or $.Params.bannerBackgroundImage .bannerBackgroundImage }}
+{{ $bannerTitle := or $.Params.bannerTitle .bannerTitle }}
+{{ $bannerDescription := or $.Params.bannerDescription .bannerDescription }}
+
+<section class="section banner"
+  style="background-image: url({{$backImage | absURL}});background-repeat: no-repeat;">
+  <div class="container-fluid wrapper banner-content">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <h4 class="banner-title">{{$bannerTitle}}</h4>
+        <p class="banner-description">{{$bannerDescription}}</p>
+      </div>
+    </div>
+  </div>
+</section>

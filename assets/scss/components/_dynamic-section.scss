@@ -1,0 +1,191 @@
+.dynamic {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+    background-color: #FAF8F6;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+
+    @include desktop {
+        padding-top: 32px;
+
+        &-header {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    &-content {
+        @include desktop {
+            align-items: center
+        }
+
+        &>div {
+            align-items: stretch;
+
+            @include desktop {
+                margin-bottom: 1rem;
+                max-width: 50% !important;
+            }
+
+            @include tablet {
+                margin-bottom: 1rem;
+                max-width: 60% !important;
+            }
+
+            @include mobile {
+                margin-bottom: 1rem;
+                max-width: 100% !important;
+            }
+
+        }
+
+        @include desktop {
+            flex-direction: column;
+
+            &>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-item {
+        border: 1px solid $dark;
+        border-radius: 20px;
+        height: 100%;
+
+        & .img {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+            @include desktop {
+                height: 100px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 180px;
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+                margin: 16px;
+                position: relative;
+                width: 100%;
+
+
+                & .text-content {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $dark;
+                    line-height: 28px;
+                    letter-spacing: 2px;
+                    max-height: 60px;
+                    min-height: 56px;
+
+                    @include desktop {
+                        letter-spacing: 0;
+                    }
+                }
+
+                & .des {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $content-color;
+                    line-height: 16px;
+                }
+
+                & .bottom-text {
+                    font-size: 14px;
+                    text-align: right;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+
+                    & .time {
+                        color: $content-color;
+                        float: left;
+                    }
+
+                    & a {
+                        display: inline-flex;
+                        align-items: center;
+                        color: $dark;
+
+                        span {
+                            color: $primary;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &-more {
+        & .btn {
+            padding: 16px 32px;
+            background-color: $dark;
+            color: #fff;
+            font-size: 1rem;
+
+            &:focus {
+                color: $primary;
+                box-shadow: none;
+            }
+        }
+
+        @include desktop {
+            margin-top: 16px !important;
+        }
+    }
+
+    .backToTop {
+        border: 1px solid $dark;
+        border-radius: 16px;
+        background: #fff;
+        position: fixed;
+        right: 30px;
+        bottom: 180px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 5;
+        transition: all 0.6s;
+
+        @include desktop {
+            right: 10px;
+            bottom: 10px;
+        }
+
+        a {
+            text-align: center;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+        & span {
+            display: block;
+            font-size: 14px;
+            color: $body-color;
+            line-height: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+{{ with .Site.Data.functionSection }}
+{{ if .enable }}
+<section class="section function" id="function">
+    <div class="container-fluid wrapper">
+        <div class="row justify-content-center">
+            <div class="function-header mb-5">
+                <span class="top-title">{{ .topTitle | markdownify }}</span>
+            </div>
+        </div>
+        <div class="row function-content">
+            <div class="col-6">
+                <div class="function-slider">
+                    {{ $Section := .functions }}
+                    {{ range $Section }}
+                    {{$imgUrl := .icon | absURL}}
+                    <div class="function-slider-item col-5" data-url="{{.icon | absURL}}"
+                        data-image="{{.image | absURL}}" data-description="{{.description}}">
+                        <div class="function-slider-item-icon">
+                            <div class="icon">
+                                <img src=" {{ $imgUrl}} " alt="icon">
+                            </div>
+                        </div>
+                        <div class="mt-3 function-slider-item-content">
+                            {{ .subTitle | markdownify }}
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="col-6 function-img">
+                {{$first := index .functions 0}}
+                <img src="{{$first.image}}" alt="function-img">
+                <p class="description text" id="function-description"> {{$first.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

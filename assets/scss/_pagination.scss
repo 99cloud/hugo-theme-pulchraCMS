@@ -1,0 +1,23 @@
+.pagination {
+  .pagination-list {
+    li {
+      list-style: none;
+    }
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-item {
+    margin: 0 5px;
+
+
+    .page-link {
+      border-radius: 4px !important;
+
+      &.active {
+        background-color: #e9ecef;
+      }
+    }
+  }
+}

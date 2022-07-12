@@ -1,0 +1,130 @@
+.function {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+    background: url(../images/function/background.svg) no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+
+    @include desktop {
+        padding-top: 0px;
+
+        &-header {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    &-content {
+        @include desktop {
+            flex-direction: column;
+
+            &>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-slider {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+
+        @include desktop {
+            justify-content: center;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 20px;
+            border-radius: 16px;
+            border: 1px solid $dark;
+            max-width: 50%;
+            min-width: 40%;
+
+            &:hover {
+                border-color: $primary;
+            }
+
+            &.active {
+                border-color: $primary;
+            }
+
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+
+            &:nth-child(2) {
+                margin-bottom: 20px;
+            }
+
+            @include desktop {
+                &:nth-child(2n+0) {
+                    margin-right: 0;
+                }
+            }
+
+            &-content {
+                height: 28px;
+                font-size: 20px;
+                font-family: PingFang SC-Regular, PingFang SC;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 2px;
+                width: 100%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-align: center;
+
+                @include desktop {
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    margin-top: .5rem !important;
+                }
+            }
+
+        }
+    }
+
+    &-img {
+        position: relative;
+        padding: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        & .description {
+            color: #fff;
+            padding: 20px;
+            letter-spacing: 2px;
+            background: $dark;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-bottom: 0;
+            border-radius: 16px;
+            line-height: 24px;
+            max-height: 50%;
+            overflow: hidden;
+
+            @include desktop {
+                font-size: 12px;
+                letter-spacing: 0;
+                padding: 20px;
+                line-height: normal;
+                padding: 10px;
+            }
+        }
+
+        @include desktop {
+            margin: 16px auto;
+            max-width: 90% !important;
+        }
+    }
+}

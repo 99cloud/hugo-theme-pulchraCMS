@@ -1,0 +1,119 @@
+---
+# 首页关于数据
+enable: true
+topTitle: 关于 OpenV2X
+content: >
+ V2X 将“人、车、路、云”等交通参与要素有机地联系在一起，不仅可以支撑车辆获得比单车感知更多的信息，促进自动驾驶技术创新和应用；还有利于构建一个智慧的交通体系，促进汽车和交通服务的新模式新业态发展，对提高交通效率、节省资源、减少污染、降低事故发生率、改善交通管理具有重要意义。
+areas:
+  - RSU：路侧单元
+  - OBU：车载单元
+  - 云控平台：边缘云控平台、中心云控平台
+  - 路侧感知设备：摄像头、激光雷达、毫米波雷达等
+thumbImage: images/about/about-thumb.svg
+carouselImage:
+  - images/carousel/4.svg
+  - images/carousel/1.svg
+  - images/carousel/2.svg
+  - images/carousel/3.svg
+  - images/carousel/5.svg
+  - images/carousel/6.svg
+  - images/carousel/7.svg
+  - images/carousel/8.svg
+  - images/carousel/9.svg
+  - images/carousel/10.svg
+  - images/about/11.png
+  - images/about/10.svg
+boardMember:
+  - images/carousel/8.svg
+  - images/about/11.png
+  - images/about/10.svg
+  - images/carousel/4.svg
+seniorMember:
+  - images/carousel/5.svg
+  - images/carousel/9.svg
+  - images/carousel/6.svg
+  - images/carousel/2.svg
+  - images/carousel/3.svg
+  - images/carousel/1.svg
+  - images/carousel/7.svg
+  # - images/carousel/10.svg
+# 关于我们 页面数据
+bannerBackgroundImage: images/about/banner-bg.png
+bannerTitle: 关于我们
+bannerDescription: 关于 OpenV2X 的详细内容
+sectionTitle1: OpenV2X 车路协同开源平台
+communityIntroduction: OpenV2X 车路协同开源项目是协会与九州云、东南大学、南开大学联合发起创立的车路协同开源技术项目， 同时也是上海开源信息技术协会旗下首例边缘计算开源技术项目。OpenV2X 车路协同开源技术社区旨在为 V2X 业务及上层应用提供数据高并发接入，融合分析， 高精度定位，网络能力开放，边缘计算，业务连续性保障等基础能力，以满足车联网辅助驾驶，自动驾驶的业务需求。
+sectionTitle2: 高级成员
+sectionTitle4: 董事成员
+sectionSubTitle: 成员排名顺序不分先后（按照公司拼音首字母排序）
+
+# 企业寄语
+sectionTitle3: 企业寄语
+remarks:
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      5G 车路网协同开源项目 OpenV2X 是人工智能落地应用的一个积极尝试，相信 OpenV2X 项目能聚集起高校、IT 企业、车企和运营商等广泛的合作伙伴，构建了算力、算法、数据、场景和合规的一体化开放社区。
+    logo: images/about/1.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      智能出行的终极目标之一是实现全天候的无人智能驾驶。然而，单纯依靠单车智能是很难实现 L4-L5 级别的无人驾驶。通过车路智能协同的方式是实现这一目标的重要途径。OpenV2X 开源项目是一个非常正确的研发方向，令人振奋的开源项目。我们很期待项目发展壮大，并愿意积极的参与其中。
+    logo: images/about/3.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      很高兴见证了 5G 车路协同开源项目 OpenV2X 的推出和发布，开源、开放、软硬件解耦、持续演进，OpenV2X 的这些特色优势将会降低 V2X 产业的入门门槛，有效推动 V2X、自动驾驶及物流行业的快速发展。
+    logo: images/about/2.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      5G 车路协同开源项目 OpenV2X 的发布让人感到振奋，OpenV2X 是全球首个面向车路协同场景的开源项目，完整覆盖了从数据感知、融合分析、模型计算、管理平台、场景应用的业务流程，在凝聚产业力量方面迈出了重要一步。
+    logo: images/about/4.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      今天很高兴与大家一起见证了 5G 车路网协同开源项目 OpenV2X 及开源技术社区的成立。车联网与车路协同作为 5G 边缘计算最大的应用场景，将在新基建中发挥巨大作用，而作为车联网与车路协同大脑的云控平台是其重要组成部分。九州云自成立以来， 一直坚持开放式创新的理念，希望以此开源平台为纽带， 和产业界， 学术界的各个合作伙伴， 一起推动车路协同产业的快速健康发展！
+    logo: images/about/6.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      5G 车路协同开源项目 OpenV2X 的发布是一件值得祝贺的好事，5G、V2X、车路协同等都是新基建的重要组成部分，OpenV2X 项目作为在此领域的第一个开源项目，将会吸引更多的厂商与开发者参与，有力助推行业发展。
+    logo: images/about/5.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      智能交通近年来的飞速发展，沉淀了不少典型场景、行业标准和最佳实践。OpenV2X 项目的开源，让开发者不再重造轮子，让厂商凝聚更多共识，必将推进行业的发展快步踏上新台阶。实乃行业幸事，国之幸事！
+    logo: images/about/7.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      作为美国英伟达公司在中国的指定合作伙伴，谷梵智能负责运营英伟达南京创新赋能中心,  中心现拥有国内首个搭载英伟达 DGX-A100 的超算集群。我们很高兴积极参与 OpenV2X 社区， 并将我们的算力为自动驾驶和车路协同这一智慧城市的核心场景赋能。
+    logo: images/about/8.svg
+  - name: 张三
+    jobTitle: 院长
+    content: >
+      软件定义汽车！汽车产业链及供应链也将遵守软件的规则，全球性新的汽车革命已经到来！望车联网 OpenV2X 开源技术社区凝结全球共识，积极参与并推动这一变革，为全球智联提供中国智慧、中国方案！
+    logo: images/about/9.svg
+# Join US
+joinUsText: 加入我们
+joinContent1: 加入 OpenV2X 车路协同开源技术社区，深度参与社区活动
+joinContent2: 了解社区章程，下载填写
+applicationForm: 企业申请表
+joinContent3: 发送至：
+email: contact@openv2x.org
+btnText1: 下载社区章程
+btnText2: 下载企业申请表
+# Contact US
+contactText: 联系我们
+wechatImage:  images/about/wechat.png
+wechatILabel: OpenV2X 社群
+officeAccountImage:  images/about/official_account.jpg
+officeAccountLabel: OpenV2X 公众号
+emailImage:  images/about/email.svg
+emailLabel: OpenV2X 邮箱
+downloadCharterPath: /joinus/OpenV2X_社区章程（草案）.pdf
+downloadApplicationBlankPath: /joinus/社区成员企业申请表.docx
+
+
+

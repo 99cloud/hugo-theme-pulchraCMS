@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ with .Site.Data.developer }}
+{{ if .enable }}
+
+{{ partial "banner.html" . }}
+
+<div class="container-fluid wrapper developer">
+  <section class="section">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .sectionTitle) }}
+    <div class="row developer-whitepaper">
+      <div class="col-12 inner px-0">
+        <img src="{{.whitePaterThumb | absURL}}" alt="whitePaperThumb">
+        <div class="inner-content">
+          <h4 class="title">{{ .whitePaperSubTitle }}</h4>
+          <p>{{.whitePaperDescription}}</p>
+          <div class="inner-content-btn">
+            <a href="{{$.Site.Params.apiBaseUrl}}/api/v1/download/whitepaper" download class="downloadBtn">
+              <button type="submit" class="btn btn-primary btn-block"  id="download_form_button">
+                {{ .downloadBtnText }}
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{{ end }}
+{{ end }}
+{{ end }}

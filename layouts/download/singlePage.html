@@ -1,0 +1,27 @@
+{{ define "main" }} {{ $address := .Site.Params.address }}
+<section class="section download-page">
+  <div class="container download-wrapper">
+    <div class="inner-wrapper">
+      <div class="header-wrapper">
+        <div class="header-icon">
+          <i class="fa fa-download"></i>
+        </div>
+        <div class="header-title">{{ $.Params.title }}</div>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary btn-block download-button"
+        id="download_form_button"
+      >
+        {{ $.Params.downloadButton }}
+      </button>
+      <a
+        href="{{ .Site.BaseURL }}"
+        class="btn btn-default btn-block download-button home-button"
+        >{{ $.Params.homeButton }}</a
+      >
+    </div>
+  </div>
+  <p class="auth-footer">浙江九州云科技有限公司 @2022</p>
+</section>
+{{ end }}

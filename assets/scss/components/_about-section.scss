@@ -1,0 +1,150 @@
+.about_section {
+  overflow: hidden;
+  margin-top: 80px;
+  position: relative;
+
+  @include desktop {
+    margin-top: 0px;
+  }
+
+  & .wrapper {
+    // margin-bottom: 108px;
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+
+    @include desktop {
+      // padding-bottom: 230px;
+    }
+
+    &-inner {
+      padding: 41px 28px;
+      padding-bottom: 16px;
+      background: #FAF8F6;
+      color: $body-color;
+      margin-right: 210px;
+
+      &-box {
+        padding-right: 210px !important;
+      }
+
+      @include desktop {
+        margin-right: 0px;
+
+        &>div {
+          max-width: 100%;
+          padding-right: 0 !important;
+        }
+      }
+
+      &>div {
+        padding: 0;
+      }
+
+      & .top-title {
+        margin-bottom: 12px !important;
+      }
+
+      @include desktop {
+        padding: 25px;
+      }
+
+      @include desktop {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+      }
+    }
+
+    &-thumb {
+      position: absolute;
+      right: 0;
+
+      @include desktop {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        padding: 0 25px;
+        margin-top: 16px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-area {
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: $dark;
+    font-weight: normal;
+    line-height: 14px;
+    letter-spacing: 2px;
+    display: inline-block;
+
+    @include desktop {
+      letter-spacing: 0;
+      margin-bottom: 8px !important;
+    }
+  }
+
+  &-partner {
+    animation: scrollToRight 30s linear infinite;
+
+    .box {
+      display: inline-block;
+      margin-top: 60px;
+
+      @include desktop {
+        margin-top: 32px;
+        margin-bottom: 60px;
+      }
+
+      img {
+        width: 187px;
+        height: 92px;
+        background: #faf8f6;
+        border-radius: 20px;
+      }
+    }
+
+    @include desktop {
+      & .mask {
+        display: none;
+      }
+    }
+
+    & .partner-l,
+    .partner-r {
+      height: 92px;
+      z-index: 3;
+    }
+
+  }
+
+  & .mask {
+    position: absolute;
+    // background: red;
+    width: 100%;
+    left: 0;
+    z-index: 3;
+    bottom: 0;
+  }
+}
+
+@keyframes scrollToRight {
+  0% {
+    transform: translate3d(-50%, 0, 0)
+  }
+
+  100% {
+    transform: translate3d(0%, 0, 0)
+  }
+}

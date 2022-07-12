@@ -1,0 +1,20 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/twotone/send-2">
+<g id="vuesax/twotone/send-2_2">
+<g id="send-2">
+<path id="Vector" d="M24 32.3767L32.3533 24" stroke="url(#paint0_linear_266_935)" stroke-width="3.5" stroke-linecap="round"/>
+<path id="Vector_2" d="M37.0759 8.14369C45.9659 5.18036 50.7959 10.0337 47.8559 18.9237L41.2526 38.7337C36.8193 52.057 29.5393 52.057 25.1059 38.7337L23.1459 32.8537L17.2659 30.8937C3.9426 26.4604 3.9426 19.2037 17.2659 14.747L37.0759 8.14369Z" stroke="url(#paint1_linear_266_935)" stroke-width="3.5"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_266_935" x1="24" y1="24" x2="33.5183" y2="25.6479" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint1_linear_266_935" x1="7.27344" y1="7.27344" x2="54.4898" y2="15.469" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,22 @@
+{{ define "main" }} {{ $address := .Site.Params.address }}
+<div class="background"></div>
+<section class="section login-page" id="subscribeConfirm">
+  <section class="auth-layout-header">
+    <div class="header">
+      <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+        <img src="{{ .Site.Params.logo | absURL }}" alt="site-logo" />
+      </a>
+    </div>
+  </section>
+  <div class="container login-wrapper">
+    <div class="form-wrapper">
+      <div class="login-form-title">
+        <div class="first-title">{{ $.Params.title }}</div>
+        <div class="alert alert-success" role="alert" id="confirm_success"></div>
+        <div class="alert alert-danger" role="alert" id="confirm_alert"></div>
+      </div>
+    </div>
+  </div>
+  <p class="auth-footer"></p>
+</section>
+{{ end }}

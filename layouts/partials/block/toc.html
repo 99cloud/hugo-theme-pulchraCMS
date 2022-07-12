@@ -1,0 +1,6 @@
+{{ if in .TableOfContents "ul" }}
+    <div noindex data-nosnippet>
+        {{ $replace := printf "<a href=\"%s#" .Permalink }}
+        {{ replace .TableOfContents "<a href=\"#" $replace | safeHTML }}
+    </div>
+{{ end }}

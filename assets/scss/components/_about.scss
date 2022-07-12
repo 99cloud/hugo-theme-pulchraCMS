@@ -1,0 +1,256 @@
+.about {
+  .community {
+    .section-title {
+      padding-bottom: 20px;
+    }
+
+    &-text {
+      font-size: 16px;
+      // font-family: PingFang SC-Medium, PingFang SC;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    &-logo {
+      justify-content: center;
+      max-width: 80%;
+      margin: 0 auto;
+
+      &-item {
+        min-height: 146px;
+      }
+
+      img {
+        background: #faf8f6;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+      }
+
+      @include desktop {
+        max-width: 100% !important;
+        @include row-cols(2);
+      }
+
+      // @include tablet {
+      //   @include row-cols(3);
+      // }
+
+      @include mobile {
+        @include row-cols(1);
+      }
+
+      // @include mobile-xs {
+      //   @include row-cols(2);
+      // }
+
+      // @include mobile-s {
+      //   @include row-cols(1);
+      // }
+
+      &-item {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .remarks {
+
+    &>div {
+      &:nth-child(1) {
+        .company {
+          width: 160px;
+        }
+      }
+
+      &:nth-child(2) {
+        .company {
+          width: 220px;
+        }
+      }
+    }
+
+    &-item-inner {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border: 1px solid $dark;
+      border-radius: 16px;
+      text-align: center;
+      background: #fff;
+
+      .name {
+        height: 28px;
+        font-size: 20px;
+        font-family: PingFang SC-Semibold, PingFang SC;
+        font-weight: 500;
+        line-height: 20px;
+      }
+
+      .title {
+        font-size: 12px;
+        font-family: PingFang SC-Regular, PingFang SC;
+        font-weight: 300;
+        line-height: 17px;
+        margin-bottom: 20px;
+        color: rgba(18, 4, 0, .5);
+      }
+
+      .content {
+        font-size: 12px;
+        // font-family: PingFang SC-Medium, PingFang SC;
+        font-weight: 400;
+        line-height: 28px;
+      }
+
+      .company {
+        margin: 0 auto;
+        width: 120px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &-join {
+    margin-top: 60px;
+    background: url(../images/about/join_us_bg.svg) no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+    & .section-title {
+      padding-bottom: 20px;
+    }
+
+    &-content {
+      font-size: 16px;
+      // font-family: PingFang SC-Medium, PingFang SC;
+      font-weight: 400;
+      color: #120400;
+      line-height: 36px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 60px;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .application-form {
+        color: #FC5834;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .btn {
+        padding: 12px 32px;
+
+        @include desktop {
+          padding: 12px;
+        }
+      }
+
+      a .btn {
+        height: 52px;
+        font-size: 20px;
+        font-family: PingFang SC-Semibold, PingFang SC;
+        font-weight: 500;
+        line-height: 23px;
+      }
+
+      a:first-child {
+        margin-right: 28px;
+
+        .btn {
+          background: linear-gradient(148deg, #FC5834 37%, #FAB438 100%);
+          color: #fff;
+          border: none;
+
+          &:focus,
+          &:active {
+            color: #fff !important;
+          }
+        }
+      }
+
+      a:last-child {
+        .btn {
+          background: transparent;
+          color: $primary  !important;
+
+
+          &:hover {
+            color: $primary  !important;
+          }
+
+          &:focus,
+          &:active {
+            background: transparent !important;
+          }
+        }
+      }
+
+    }
+  }
+
+  &-contact {
+    margin-bottom: 120px;
+
+    @include desktop {
+      margin-bottom: 60px;
+    }
+
+    .inner {
+      &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include desktop {
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+
+        img {
+          width: 180px;
+          height: 180px
+        }
+
+        .label {
+          height: 22px;
+          font-size: 16px;
+          font-family: PingFang SC-Medium, PingFang SC;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 2px;
+          margin-top: 20px;
+
+          @include desktop {
+            margin-top: 10px;
+          }
+        }
+
+        .email {
+          font-size: 12px;
+          font-family: PingFang SC-Regular, PingFang SC;
+          font-weight: 300;
+          color: #000000;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.hero {
+  padding: 129px 0;
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/hero/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include desktop {
+    padding: 40px 0 40px;
+    margin-top: 100px;
+  }
+
+  &_content {
+    padding: 0 20px 0 0;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    @include desktop {
+      text-align: center;
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  }
+
+  &-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: $primary;
+    line-height: 19px;
+    background: $bg-color;
+    letter-spacing: 0;
+    border-radius: 8px 8px 8px 8px;
+  }
+
+  &-title {
+    font-size: 36px;
+    font-family: PingFang SC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: $dark;
+    line-height: 42px;
+    letter-spacing: 8px;
+
+    @include desktop {
+      font-size: 16px;
+      margin: 0;
+      margin-top: 0 !important;
+    }
+  }
+
+  &-btn {
+
+    @include desktop {
+      margin-top: 1rem !important;
+      justify-content: center;
+    }
+
+    & .btn {
+      display: inline-flex;
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      align-items: center;
+
+      @include desktop {
+        font-size: .75rem !important;
+        padding: .25rem .5rem !important;
+      }
+
+      &:first-child {
+        border: none;
+        background: linear-gradient(148deg, $primary 37%, #FAB438 100%);
+      }
+
+      &:nth-child(2) {
+        color: $primary;
+        background: transparent;
+
+        &:active {
+          color: $primary;
+          background: transparent;
+        }
+      }
+    }
+
+    svg {
+      margin-left: .25rem;
+    }
+
+  }
+}

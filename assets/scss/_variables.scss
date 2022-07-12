@@ -1,0 +1,82 @@
+//
+// Colors
+//
+
+// General
+$primary: #FC5834;
+$dark: #120400;
+$bg-color: #FCECE0;
+$secondary: #282f49;
+// Text
+$headings-color: #282f49;
+$body-color: #120400;
+$content-color: #525049;
+$second-font-color: rgba(18, 4, 0, 0.5);
+//
+// Typography
+//
+
+@font-face {
+  font-family: 'PingFang SC-Light';
+  src: url('../fonts/PingFangSC-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC-Medium';
+  src: url('../fonts/PingFangSC-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC-Regular';
+  src: url('../fonts/PingFangSC-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC-Semibold';
+  src: url('../fonts/PingFangSC-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC-Thin';
+  src: url('../fonts/PingFangSC-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC-Ultralight';
+  src: url('../fonts/PingFangSC-Ultralight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-base: PingFang SC-Regular,
+  PingFang SC;
+$headings-font-family: PingFang SC-Semibold,
+  PingFang SC;
+$middle-font-family: PingFang SC-Medium,
+  PingFang SC;
+
+// Size
+$font-size-base: 1.125rem; // 18px
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 30px;
+$h4-font-size: 25px;
+$h5-font-size: 22px;
+$h6-font-size: 16px;
+
+// Spacing
+$headings-margin-bottom: 1.5rem;
+$line-height-base: 1.75;
+
+// Misc
+$link-hover-decoration: none;

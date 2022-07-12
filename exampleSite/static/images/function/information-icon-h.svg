@@ -1,0 +1,30 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="vuesax/twotone/sms-tracking">
+<g id="vuesax/twotone/sms-tracking_2">
+<g id="sms-tracking">
+<path id="Vector" d="M5.66667 24.0837C5.66667 14.167 11.3333 9.91699 19.8333 9.91699H48.1667C56.6667 9.91699 62.3333 14.167 62.3333 24.0837V43.917C62.3333 53.8337 56.6667 58.0837 48.1667 58.0837H19.8333" stroke="url(#paint0_linear_449_7099)" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_2" d="M48.1667 25.5L39.2983 32.5833C36.38 34.9067 31.5916 34.9067 28.6733 32.5833L19.8333 25.5" stroke="url(#paint1_linear_449_7099)" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_3" d="M5.66667 46.75H22.6667" stroke="url(#paint2_linear_449_7099)" stroke-width="4.25" stroke-linecap="round"/>
+<path id="Vector_4" d="M5.66667 35.417H14.1667" stroke="url(#paint3_linear_449_7099)" stroke-width="4.25" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_449_7099" x1="5.66667" y1="9.91699" x2="69.508" y2="22.9565" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint1_linear_449_7099" x1="19.8333" y1="25.5" x2="45.2046" y2="39.6404" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint2_linear_449_7099" x1="5.66667" y1="46.75" x2="15.2354" y2="56.7174" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint3_linear_449_7099" x1="5.66667" y1="35.417" x2="13.5137" y2="39.504" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

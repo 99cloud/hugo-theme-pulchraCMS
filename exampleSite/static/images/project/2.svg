@@ -1,0 +1,27 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 659">
+<rect id="Rectangle 487" x="1.5" y="1.5" width="69" height="69" rx="14.5" stroke="url(#paint0_linear_464_7870)" stroke-width="3"/>
+<g id="vuesax/twotone/send-2">
+<g id="vuesax/twotone/send-2_2">
+<g id="send-2">
+<path id="Vector" d="M32.2856 40.0645L40.0423 32.2861" stroke="url(#paint1_linear_464_7870)" stroke-width="3.25" stroke-linecap="round"/>
+<path id="Vector_2" d="M44.4277 17.562C52.6827 14.8103 57.1677 19.317 54.4377 27.572L48.306 45.967C44.1893 58.3387 37.4293 58.3387 33.3127 45.967L31.4927 40.507L26.0327 38.687C13.661 34.5703 13.661 27.832 26.0327 23.6937L44.4277 17.562Z" stroke="url(#paint2_linear_464_7870)" stroke-width="3.25"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_464_7870" x1="0" y1="0" x2="82.0276" y2="14.2409" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint1_linear_464_7870" x1="32.2856" y1="32.2861" x2="41.124" y2="33.8163" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint2_linear_464_7870" x1="16.7539" y1="16.7539" x2="60.5977" y2="24.364" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,51 @@
+{{ with .Site.Data.hero }}
+{{ if .enable }}
+<section class="hero" id="home">
+  <div class="container-fluid wrapper">
+    <div class="row align-items-center">
+      <div class="col-lg-6 inner">
+        <div class="hero_content">
+          <div class="">
+            <span class="hero-name p-1 px-2">{{ .name }}</span>
+            <h3 class="hero-title mt-2">{{.topTitle}}</h3>
+            {{ .content | markdownify }}
+          </div>
+          <div class="hero-btn d-flex mt-5">
+            <a href="{{ "project" | absURL }}" class="btn btn-primary btn-zoom px-3 mr-4">{{.exploreBtnText}}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/twotone/arrow-circle-right">
+                  <g id="vuesax/twotone/arrow-circle-right_2">
+                    <g id="arrow-circle-right">
+                      <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99995 14.6663C4.31805 14.6663 1.33328 11.6816 1.33328 7.99967C1.33328 4.31778 4.31805 1.33301 7.99995 1.33301C11.6818 1.33301 14.6666 4.31778 14.6666 7.99967C14.6666 11.6816 11.6818 14.6663 7.99995 14.6663Z"
+                        stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2" d="M7.1601 10.3541L9.50676 8.00079L7.1601 5.64746" stroke="white"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="{{ "developer/whitepaper" | absURL }}" class="btn btn-primary btn-zoom px-3">{{.downloadWhitePaperBtnText}}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/twotone/arrow-circle-right">
+                  <g id="vuesax/twotone/arrow-circle-right_2">
+                    <g id="arrow-circle-right">
+                      <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.99992 14.6663C4.31802 14.6663 1.33325 11.6816 1.33325 7.99967C1.33325 4.31778 4.31802 1.33301 7.99992 1.33301C11.6818 1.33301 14.6666 4.31778 14.6666 7.99967C14.6666 11.6816 11.6818 14.6663 7.99992 14.6663Z"
+                        stroke="#FC5834" stroke-linecap="round" stroke-linejoin="round" />
+                      <path id="Vector_2" d="M7.1601 10.3541L9.50676 8.00079L7.1601 5.64746" stroke="#FC5834"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

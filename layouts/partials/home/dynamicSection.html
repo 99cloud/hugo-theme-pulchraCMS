@@ -1,0 +1,83 @@
+{{ with .Site.Data.dynamicSection }}
+{{ if .enable }}
+<section class="section dynamic" id="dynamic">
+    <div class="container-fluid wrapper">
+        <div class="row justify-content-center">
+            <div class="dynamic-header mb-5">
+                <span class="top-title">{{ .topTitle | markdownify }}</span>
+            </div>
+        </div>
+        <div class="row dynamic-content">
+            {{$detailText := .detailText}}
+            {{ with $.Site.GetPage "/news" }}
+            {{ $articles := (where .Pages.ByPublishDate.Reverse "Draft" false) }}
+            {{ range $key, $value := first 3 $articles }}
+            {{$index := add 1 $key}}
+            <div class="col-4">
+                <div class="dynamic-item">
+                    <div class="img"
+                        style="background-image: url(images/dynamic/{{$index}}.svg);background-repeat: no-repeat"></div>
+                    <div class="dynamic-item-inner">
+                        <div class="content">
+                            <div class="text-content mb-3 text-ellipsis">
+                                {{ .Title | markdownify }}
+                            </div>
+                            <div class="des  text-ellipsis mb-3">
+                                {{.Description | markdownify}}
+                            </div>
+                            <div class="bottom-text">
+                                <span class="time">{{.PublishDate.Format "2006年01月02日"}}</span>
+                                <a href="{{ .Permalink }}">
+                                    {{$detailText}}
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Frame">
+                                            <path id="Vector"
+                                                d="M10.7812 7.33214L7.20517 3.75614L8.14784 2.81348L13.3332 7.99881L8.14784 13.1841L7.20517 12.2415L10.7812 8.66548H2.6665V7.33214H10.7812Z"
+                                                fill="#FC5834" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+        <div class="row dynamic-more mt-5 mb-5 justify-content-center">
+            <a href="{{ "posts/news" | absURL }}">
+                <button class="btn">{{.buttonText}}</button>
+            </a>
+        </div>
+    </div>
+    <div class="backToTop">
+        <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="vuesax/bulk/send">
+                    <g id="vuesax/bulk/send_2">
+                        <g id="send">
+                            <path id="Vector"
+                                d="M11.3465 7.90729C13.9065 2.78729 18.0931 2.78729 20.6531 7.90729L26.3598 19.3206C30.1998 27.0006 27.0531 30.134 19.3865 26.294L17.0798 25.134C16.3998 24.8006 15.6131 24.8006 14.9331 25.134L12.6131 26.294C4.94648 30.134 1.79981 26.9873 5.63981 19.3206L11.3465 7.90729Z"
+                                fill="url(#paint0_linear_326_2151)" />
+                            <path id="Vector_2"
+                                d="M17 19.4141C17 19.9607 16.5467 20.4141 16 20.4141C15.4533 20.4141 15 19.9607 15 19.4141V12.2141C15 11.6674 15.4533 11.2141 16 11.2141C16.5467 11.2141 17 11.6674 17 12.2141V19.4141Z"
+                                fill="white" />
+                        </g>
+                    </g>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_326_2151" x1="2.99576" y1="21.8159" x2="19.7281" y2="1.7067"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0.370027" stop-color="#FC5834" />
+                        <stop offset="0.99639" stop-color="#FAB438" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>{{.backTopText}}</span>
+        </a>
+    </div>
+</section>
+{{ end }}
+{{ end }}

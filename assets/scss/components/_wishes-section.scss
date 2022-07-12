@@ -1,0 +1,133 @@
+.wishes {
+    margin-top: 80px;
+    margin-bottom: 200px;
+
+    @include desktop {
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+
+
+    & .wrapper {
+        max-width: 100%;
+        padding: 0;
+
+        & .row {
+            margin: 0;
+        }
+    }
+
+    &-content {
+
+        &-item {
+            height: 368px;
+            background-color: #FAF8F6;
+            margin: 0 28px;
+            border-radius: 16px;
+            transform: translateX(calc(50% + 28px));
+
+            @include desktop {
+                transform: none;
+            }
+
+            &-inner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 68px;
+
+                @include desktop {
+                    padding: 20px 24px;
+                }
+
+
+                & .logo {
+                    width: 187px;
+                    height: 92px;
+                    border-radius: 50%;
+                    margin-bottom: 12px;
+
+                    img {
+                        width: 100%;
+                        height: 100%
+                    }
+                }
+
+                & .content {
+                    font-size: 18px;
+                    font-family: PingFang SC-Medium, PingFang SC;
+                    font-weight: 400;
+                    color: $body-color;
+                    line-height: 32px;
+                    letter-spacing: 2px;
+                    min-height: 64px;
+                    max-height: 128px;
+                    -webkit-line-clamp: 4;
+
+                    @include desktop {
+                        font-size: 16px;
+                        letter-spacing: 0;
+                        -webkit-line-clamp: 4;
+                    }
+                }
+
+                & .title {
+                    font-size: 14px;
+                    font-family: PingFang SC-Regular, PingFang SC;
+                    font-weight: 300;
+                    color: $content-color;
+                    line-height: 16px;
+                    letter-spacing: 2px;
+                    padding: 16px 0;
+                    text-align: center;
+                    -webkit-line-clamp: 2;
+
+                    @include desktop {
+                        letter-spacing: 0;
+                    }
+                }
+
+                & .company {
+                    width: 187px;
+                    height: 92px;
+
+                    img {
+                        width: 100%;
+                        height: 100%
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slider {
+        & .slick-arrow {
+            width: 80px;
+            height: 80px;
+            top: 450px;
+
+            @include desktop {
+                display: none !important;
+            }
+        }
+
+        & .slick-prev:before {
+            opacity: 1;
+            content: url(../images/wishes/arrow-left.svg);
+        }
+
+        & .slick-next:before {
+            opacity: 1;
+            content: url(../images/wishes/arrow-right.svg);
+        }
+
+        & .slick-prev {
+            left: calc(50% - 120px);
+        }
+
+        & .slick-next {
+            right: calc(50% - 120px);
+        }
+    }
+}

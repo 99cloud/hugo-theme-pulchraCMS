@@ -1,0 +1,112 @@
+.target {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+
+    @include desktop {
+        padding-top: 0px;
+        margin-top: 32px;
+
+        &-header {
+            margin-bottom: 1rem !important;
+        }
+    }
+
+    &-content {
+        @include desktop {
+            flex-direction: column;
+
+            &>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        &-inner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+            background: url(../images/target/background.svg) no-repeat;
+            background-size: 100% 100%;
+            height: 0;
+            padding-bottom: 34%;
+            width: 100%;
+
+            & .img {
+                margin-left: 24px;
+                margin-top: 20px;
+            }
+
+            & .content {
+                display: flex;
+                flex-direction: column;
+                padding: 16px 24px;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                padding-left: 100px;
+
+                @include desktop-xl {
+                    padding: 14px 24px;
+                    padding-left: 100px;
+                }
+
+                @include desktop {
+                    padding: 12px 20px;
+                    padding-left: 100px;
+                }
+
+
+                & .sub-title {
+                    margin-bottom: 0;
+
+                    @include desktop-xl {
+                        margin-bottom: 0;
+                    }
+
+                    @include desktop-lg {
+                        font-size: 16px;
+                    }
+
+                    @include desktop {
+                        font-size: 14px;
+                    }
+                }
+
+                & .text-content {
+                    -webkit-line-clamp: 5;
+
+                    @include desktop-xl {
+                        -webkit-line-clamp: 5;
+                    }
+
+                    @include desktop-mxl {
+                        -webkit-line-clamp: 4;
+                    }
+
+
+                    @include desktop-lg {
+                        font-size: 12px;
+                        line-height: 20px;
+                        -webkit-line-clamp: 3;
+                    }
+
+                    @include desktop {
+                        letter-spacing: 0;
+                        -webkit-line-clamp: 4;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+---
+enable: true
+bannerBackgroundImage: images/download/banner-bg.png
+bannerTitle: V 1.0.126 Albany 版本发布
+bannerDescription: 当前最新版本为 V 1.0.126 Albany | 发布时间2022年6月30日
+sectionTitle1: OpenV2X 架构设计
+sectionTitle2: 最新版本特性
+newVersion:
+  title: 最新版本特性
+  list:
+    - 1. 支持路侧数据融合感知分析
+    - 2. 支持符合 V2X 标准的南北向接口
+    - 3. 支持碰撞预警、逆向超车预警、协作式变道、感知数据共享等
+futureVersion:
+  title: 未来版本展望
+  list:
+    - 1. 支持 5G MEC 模式下的云边协同
+    - 2. 支持不同场景的应用兼容和推送
+    - 3. 支持路侧感知设备原始数据流的分析处理
+downloadCardTitle: 下载 OpenV2X
+releaseTime: 发布：2022年6月30日
+downBtnText: 立即下载
+version: V 1.0.126 Albany
+downloadLink: https://github.com/open-v2x
+

@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<div class="posts-detail">
+  <div class="container-fluid wrapper">
+    <section class="section">
+      <div class="breadCrumb-wrapper">
+        <span class="first">{{ .Site.Params.posts.menuTitle }}</span>
+        <span class="divider">></span>
+        <span class="second">
+          <a href="{{ .Site.Params.newsLink }}">{{ .Site.Params.posts.newsTitle }}</a>
+        </span>
+      </div>
+    </section>
+    <section class="posts-content">
+      <div class="title">{{.Title}}</div>
+      <div class="metadata">
+        <span class="time">{{.Site.Params.posts.timeLabel}}{{ .PublishDate.Format "2006年01月02日" }}</span>
+        <span class="authors">{{.Site.Params.posts.authorLabel}}
+          <span>
+            {{ range .Param "authors" }}
+              <span class="author">{{ . }}</span>
+            {{ end }}
+          </span>
+        </span>
+      </div>
+      <div class="posts-detail">
+        {{ .Content }}
+      </div>
+    </section>
+  </div>
+</div>
+
+{{ end }}

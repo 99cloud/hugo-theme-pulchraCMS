@@ -1,0 +1,8 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.Pages -}}
+    {{ $fullPath := partial "block/fullPath.html" . }}
+    {{ $breadcrumb := partial "block/breadcrumb.html" . }}
+    {{ $article := partial "block/article.html" . }}
+    {{- $.Scratch.Add "index" (dict "permalink" .Permalink "relPermalink" .RelPermalink "mainContent" $article "fullPath" $fullPath "breadcrumb" $breadcrumb) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

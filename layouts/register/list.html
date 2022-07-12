@@ -1,0 +1,101 @@
+{{ define "main" }}
+  <div class="background"></div>
+
+  <section class="section register-page">
+    <section class="auth-layout-header">
+      <div class="header">
+        <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+          <img src="{{ .Site.Params.logo | absURL }}" alt="site-logo" />
+        </a>
+      </div>
+    </section>
+    <div class="container register-wrapper">
+      <div class="form-wrapper">
+        <div class="register-form-title">
+          <div class="first-title">{{ $.Params.title }}</div>
+          <div class="second-title">{{ $.Params.secondeTitle }}</div>
+        </div>
+        <div class="register-form">
+          <div class="alert alert-success" role="alert" id="register_success"></div>
+          <div class="alert alert-danger" role="alert" id="register_alert"></div>
+          <form
+            id="register_form"
+            action="{{ .Site.Params.formspreeURL }}"
+            method="POST"
+          >
+            <div class="form-group register-form-item">
+              <input
+                type="email"
+                class="form-control register-form-input"
+                name="email"
+                id="register_email"
+                placeholder="输入邮箱地址"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="form-group register-form-item">
+              <input
+                type="code"
+                class="form-control register-form-input"
+                name="captcha"
+                placeholder="输入验证码"
+                minlength="4"
+                maxlength="8"
+                required
+                id="register_captcha"
+              />
+              <div class="code-addon">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="code_loading"></span>
+                <a id="get_code">获取验证码</a>
+              </div>
+            </div>
+            <div class="form-group register-form-item" id="show_hide_password">
+              <input
+                type="password"
+                class="form-control register-form-input"
+                name="password"
+                placeholder="输入密码"
+                minlength="6"
+                maxlength="20"
+                required
+                id="register_password"
+              />
+              <div class="password-addon">
+                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="form-group register-form-item" id="show_hide_password_confirm">
+              <input
+                type="password"
+                class="form-control register-form-input"
+                name="passwordConfirm"
+                placeholder="再次输入密码"
+                required
+                minlength="6"
+                maxlength="20"
+                id="register_password_confirm"
+              />
+              <div class="password-addon">
+                <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-block register-button"
+              id="register_form_button"
+            >
+              <span class="loading-wrapper">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="register_loading"></span>
+                {{ $.Params.registerButton }}
+              </span>
+            </button>
+          </form>
+          <a href="{{ "login" | absURL }}" class="btn btn-default btn-block register-button login-button">{{ $.Params.loginButton }}</a>
+          <p class="tip">注册及同意<span>《隐私协议》</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="auth-footer"></p>
+  </section>
+{{ end }}

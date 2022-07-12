@@ -1,0 +1,32 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 659">
+<rect id="Rectangle 487" x="1.5" y="1.5" width="69" height="69" rx="14.5" stroke="url(#paint0_linear_464_7896)" stroke-width="3"/>
+<g id="vuesax/twotone/chart">
+<g id="vuesax/twotone/chart_2">
+<g id="chart">
+<path id="Vector" d="M18.7099 22.9347C15.9583 26.5747 14.3333 31.103 14.3333 35.9997C14.3333 47.9597 24.0399 57.6663 35.9999 57.6663C47.9599 57.6663 57.6666 47.9597 57.6666 35.9997C57.6666 24.0397 47.9599 14.333 35.9999 14.333" stroke="url(#paint1_linear_464_7896)" stroke-width="3.25" stroke-linecap="round"/>
+<path id="Vector_2" d="M20.8333 35.9997C20.8333 44.3847 27.6149 51.1663 35.9999 51.1663C44.3849 51.1663 51.1666 44.3847 51.1666 35.9997C51.1666 27.6147 44.3849 20.833 35.9999 20.833" stroke="url(#paint2_linear_464_7896)" stroke-width="3.25" stroke-linecap="round"/>
+<path id="Vector_3" d="M36 44.6663C40.7883 44.6663 44.6667 40.788 44.6667 35.9997C44.6667 31.2113 40.7883 27.333 36 27.333" stroke="url(#paint3_linear_464_7896)" stroke-width="3.25" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_464_7896" x1="0" y1="0" x2="82.0276" y2="14.2409" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint1_linear_464_7896" x1="14.3333" y1="14.333" x2="63.7017" y2="22.9039" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint2_linear_464_7896" x1="20.8333" y1="20.833" x2="55.3912" y2="26.8326" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+<linearGradient id="paint3_linear_464_7896" x1="36" y1="27.333" x2="46.0952" y2="28.2093" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FC5834"/>
+<stop offset="1" stop-color="#FAB438"/>
+</linearGradient>
+</defs>
+</svg>

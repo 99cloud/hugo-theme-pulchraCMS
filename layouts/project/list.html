@@ -1,0 +1,70 @@
+{{ define "main" }}
+{{ with .Site.Data.project }}
+{{ if .enable }}
+
+{{ partial "banner.html" . }}
+
+<div class="project">
+  <div class="container-fluid wrapper">
+    <section class="section py-5">
+      <div class="row">
+        <div class="col-lg-5 d-flex flex-column justify-content-center introduce">
+          <h4 class="banner-title text-dark">{{.introduceTitle}}</h4>
+          <p class="banner-description text-dark mb-5">{{.introduceescription}}</p>
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="vuesax/twotone/arrow-right">
+              <g id="vuesax/twotone/arrow-right_2">
+                <g id="arrow-right">
+                  <path id="Vector" d="M31.2644 12.8477L44.4161 25.9993L31.2644 39.151" stroke="#FC5834"
+                    stroke-width="3.25" stroke-linecap="round" stroke-linejoin="round" />
+                  <path id="Vector_2" opacity="0.4" d="M7.58325 26H44.0483" stroke="#FC5834" stroke-width="3.25"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="col-lg-7 position-relative px-0">
+          <video width="100%" preload="auto" controls="false" playsinline muted>
+            <source src="{{.videoUrl}}" type="video/mp4">
+            <source src="{{.videoUrl}}" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="section speciality pt-5">
+    <div class="container-fluid wrapper">
+      <div class="row justify-content-center">
+        <div class="mb-5">
+          <span class="top-title">{{ .topTitle }}</span>
+        </div>
+      </div>
+      <div class="row">
+        {{ range .speciality }}
+        <div class="col-6 mb-5 item-wrapper">
+          <div class="item">
+            <div class="item-inner">
+              <div class="img">
+                <img src="{{.icon | absURL}}" alt="icon">
+              </div>
+              <div class="content">
+                <p class="sub-title">{{.title}}</p>
+                <div class="text-content">
+                  {{ .content | markdownify }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+  </section>
+</div>
+
+
+{{ end }}
+{{ end }}
+{{ end }}

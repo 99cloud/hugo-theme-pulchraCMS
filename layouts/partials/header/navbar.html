@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg fixed-top nav-border">
+  <div class="container-fluid wrapper">
+    <a href="{{ .Site.BaseURL }}" class="navbar-brand">
+      <img src="{{ .Site.Params.logo | absURL }}" alt="site-logo">
+    </a>
+    <!-- 站内搜索 -->
+    {{ partial "header/search.html" . }}
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto top-navigation" id="main-navigation">
+        {{ $currentPage := . }}
+        <!-- add 'active' class in template should work,but not;workaround in js -->
+        {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+                <li class="nav-item dropdown" data-url="{{.URL}}">
+                    <a href="#"  id="{{.URL}}"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link  dropdown-toggle text-dark text-sm-center {{if $currentPage.IsMenuCurrent " main" . }} active{{end}}">
+                      {{ .Name }}
+                    </a>
+                    <div class="dropdown-menu sub-menu" aria-labelledby="{{.URL}}">
+                      <ul >
+                        {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                                <a {{ if eq .Params.external true }}target="_blank" rel="noopener noreferrer" href="{{.URL}}" {{else}} href="{{ $.Site.BaseURL }}{{ .URL }}" {{ end }} >{{ .Name }}</a>
+                            </li>
+                        {{ end }}
+                      </ul>
+                    </div>
+                </li>
+            {{ else }}
+                <li class="nav-item dropdown" data-url="{{.URL}}">
+                    <a href="{{ $.Site.BaseURL }}{{ .URL }}"
+                    class="nav-link text-dark text-sm-center {{if $currentPage.IsMenuCurrent " main" . }} active{{end}}">
+                       {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
+        {{ end }}
+      </ul>
+      <div class="nav-btn">
+        <div class="navbar-nav btn_submit" id="nav_no_user">
+          <a href="{{ .Site.Params.registerLink }}" class="btn btn-primary btn-zoom">注册</a>
+          <a href="{{ .Site.Params.loginLink }}" class="btn btn-primary btn-zoom">登录</a>
+        </div>
+        <div class="navbar-nav btn_submit" id="nav_user">
+          <a class="" href="#" id="dropdownAvatar" data-toggle="dropdown" aria-expanded="false">
+            <img src="/images/login/avatar.svg" alt="avatar">
+          </a>
+          <div class="dropdown-menu nav_user_dropdown" aria-labelledby="dropdownAvatar">
+            <a class="dropdown-item nav_user_logout" href="#" id="user_logout">
+              <img src="/images/login/logout.svg" alt="avatar">
+              退出登录
+            </a>
+          </div>
+        </div>
+        <div class="navbar-nav btn_submit" id="nav_user_small">
+          <a class="btn btn-primary btn-zoom">
+            <img src="/images/login/avatar.svg" alt="avatar">
+            <span id="nav_user_email"></span>
+          </a>
+          <a class="btn btn-primary btn-zoom" id="user_logout_small">
+            退出登录
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

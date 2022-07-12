@@ -1,0 +1,11 @@
+{{ define "main" }}
+     {{ if .Content }}
+          {{ partial "block/article.html" (dict "Page" . "ShowLastmod" false) }}
+     {{ end }}
+
+     {{ with .Pages }}
+          <div class="page-links">     
+               {{ partial "block/pageLinks.html" $ }}
+          </div>
+     {{ end }}
+{{ end }}

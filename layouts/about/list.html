@@ -1,0 +1,101 @@
+{{ define "main" }}
+{{ with .Site.Data.aboutSection }}
+{{ if .enable }}
+
+{{ partial "banner.html" . }}
+
+<div class="container-fluid wrapper about">
+  <section class="section community">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .sectionTitle1) }}
+    <div class="community-text">
+      {{.communityIntroduction}}
+    </div>
+  </section>
+
+  <section class="section">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .sectionTitle4 "sectionSubTitle" .sectionSubTitle)}}
+    <div class="community-logo row row-cols-2" style="max-width: 60%">
+      {{ range .boardMember }}
+      <div class="community-logo-item col mb-3">
+        <img src="{{ . | absURL}}" alt="community-logo">
+      </div>
+      {{end}}
+    </div>
+  </section>
+
+  <section class="section">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .sectionTitle2 "sectionSubTitle" .sectionSubTitle)}}
+    <div class="community-logo row row-cols-3">
+      {{ range .seniorMember }}
+      <div class="community-logo-item col mb-3">
+        <img src="{{ . | absURL}}" alt="community-logo">
+      </div>
+      {{end}}
+    </div>
+  </section>
+
+  <section class="section">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .sectionTitle3) }}
+    <div class="remarks row" id="macy-container">
+      {{ range .remarks }}
+      <div class="col mb-3">
+        <div class="remarks-item-inner">
+          <div class="name">{{.name}}</div>
+          <div class="title">{{.jobTitle}}</div>
+          <div class="content">{{.content}}</div>
+          <div class="company mt-3"><img src="{{.logo | absURL}}"></div>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </section>
+</div>
+
+<section class="section about-join">
+  <div class="container-fluid wrapper">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .joinUsText) }}
+    <div class="about-join-content">
+      <p>{{.joinContent1}}，</p>
+      <p>{{.joinContent2}} <a href="{{.downloadApplicationBlankPath | absURL}}" download><span class="application-form">{{.applicationForm}}</span></a>，{{.joinContent3}}{{.email}}</p>
+    </div>
+    <div class="about-join-btn">
+      <a href="{{.downloadCharterPath | absURL}}"  download class="downloadBtn">
+        <button type="submit" class="btn btn-primary btn-block">
+          {{ .btnText1 }}
+        </button>
+      </a>
+      <a href="{{.downloadApplicationBlankPath | absURL}}" download class="downloadBtn" id="download-application-from">
+        <button type="submit" class="btn btn-primary btn-block">
+          {{ .btnText2 }}
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section about-contact">
+  <div class="container-fluid wrapper">
+    {{ partial "sectionTitle.html" (dict "context" . "sectionTitle" .contactText) }}
+    <div class="row inner">
+      <div class="col-4">
+        <img src="{{.wechatImage | absURL}}" alt="wechatImage">
+        <span class="label">{{.wechatILabel}}</span>
+      </div>
+      <div class="col-4">
+        <img src="{{.officeAccountImage | absURL}}" alt="officeAccountImage">
+        <span class="label">{{.officeAccountLabel}}</span>
+      </div>
+      <div class="col-4">
+        <a href="mailto:{{.email}}">
+          <img src="{{.emailImage | absURL}}" alt="emailImage">
+        </a>
+        <span class="label">{{.emailLabel}}</span>
+        <span class="email">{{.email}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+{{ end }}
+{{ end }}

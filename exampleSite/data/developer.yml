@@ -1,0 +1,12 @@
+---
+enable: true
+bannerBackgroundImage: images/developer/banner-bg.png
+bannerTitle: 文档资料
+bannerDescription: 关于 OpenV2X 详细资料内容
+sectionTitle: OpenV2X 白皮书
+whitePaterThumb: images/developer/whitePaperThumb.svg
+whitePaperSubTitle: OpenV2X 架构白皮书
+whitePaperDescription: 本白皮书从 V2X 定义开篇，简述了 V2X 应用场景、关键技术及国内外发展现状。然后，通过分析对比 V2X 新旧架构（“ 4G + 云”与“ 5G + 云 + 边”）下，车路协同架构能力的差异，并分析了“ 5G + 云 + 边”模式下 V2X 面临的问题与挑战，重点分析了四个矛盾之处。在此背景下，提出了 OpenV2X 开源项目的愿景、设计目标及目标架构等。最后，公布了 OpenV2X 开源项目的未来工作计划及发起单位寄语。
+downloadBtnText: 下载白皮书
+
+
